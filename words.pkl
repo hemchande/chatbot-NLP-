@@ -1,0 +1,17 @@
+#lemmatizing the words by converting them into their lemma form
+
+words = [lemmatizer.lemmatize(w.lower())
+for w in words:
+   if w not in ignore_words
+       words = sort(list(words))
+       classes = sort(list(classes))
+classes = intents
+
+print(len(classes) , "classes" , classes)
+print(len(words),"all words" ,  words)
+
+pickle.dump(words, open('words.pkl','wb'))
+pickle.dump(classes, open('classes.pkl', 'wb'))
+
+
+
